@@ -1,0 +1,11 @@
+:root {
+	--body-bg: #feedbc;
+	--primary: #f9b800;
+	--secondary: #262626;
+	--secondary-action-bg: #fff;
+
+	--color-on-white: var(--primary);
+	--color-on-primary: var(--secondary);
+	--color-on-bg: var(--secondary);
+
+}
