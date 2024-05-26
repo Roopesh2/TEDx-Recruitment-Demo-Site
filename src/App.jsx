@@ -61,7 +61,7 @@ function App() {
 				</div>
 			</div>
 
-			<div className="responsive bp-910 bg-secondary features">
+			<div className="responsive bp-1050-row bg-secondary features">
 				<div className="content">
 					<p className="color-primary description">
 						Quisque porttitor vitae vel amet neque scelerisque mattis. Consectetur nibh
@@ -161,13 +161,15 @@ function App() {
 				<ExpandableCardList list={FAQ_DATA} />
 			</div>
 
-			<div className="last">
+			<div className="responsive last">
 				<h3>Vulputate et pulvinar ethre Suspendisse tellus consecteur</h3>
 				<VBox h="20" />
-				<Button text="Lorem Ipsum" variant="primary" className="mb-full-width" />
+				<div className="div">
+					<Button text="Lorem Ipsum" variant="primary" className="mb-full-width" />
+				</div>
 			</div>
 
-			<footer>
+			<footer className="responsive">
 				<div>Copyright &copy; 2024 Lorem ipsum</div>
 				<div>
 					<a href="#">Privacy Policy</a> | <a href="#">Terms and conditions</a>

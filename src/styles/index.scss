@@ -19,6 +19,7 @@ body {
 .responsive {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 #root > div {
@@ -27,8 +28,9 @@ body {
 	> .img {
 		text-align: center;
 
+		max-width: 750px;
 		img {
-			max-width: 500px;
+			max-width: 750px;
 		}
 	}
 }
@@ -57,6 +59,14 @@ body {
 	font-size: calc(var(--fontSize) / 2.4);
 }
 
+.last {
+	align-items: center;
+	justify-content: space-between;
+	button {
+		width: max-content;
+	}
+}
+
 footer {
 	border-top: 1px solid #26262640;
 	margin: 15px 20px;
@@ -66,6 +76,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	justify-content: space-between !important;
 }
 
 @media screen and (min-width: 810px) {
@@ -97,9 +108,21 @@ footer {
 			align-items: flex-start;
 
 			img {
-				max-height: 50vh;
 				min-width: 350px;
 			}
+		}
+	}
+
+	.cc2 .bg-tertiary {
+		background-color: $primary !important;
+		span {
+			color: $tertiary !important;
+		}
+	}
+	.cc2 .bg-primary {
+		background-color: $tertiary !important;
+		span {
+			color: $primary !important;
 		}
 	}
 
@@ -132,6 +155,10 @@ footer {
 }
 
 @media screen and (min-width: 1050px) {
+	footer {
+		padding: 6% 8% 6% 8%;
+		margin: 0;
+	}
 	#root {
 		> div {
 			padding: 6% 8% 6% 10%;
@@ -145,8 +172,11 @@ footer {
 				justify-content: center;
 			}
 
-			.img > img {
-				transform: translateY(0);
+			> .img {
+				justify-content: center;
+				> img {
+					transform: translateY(0);
+				}
 			}
 		}
 		.features .content {
@@ -171,18 +201,37 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+	footer {
+		padding: 6% 9% 6% 10%;
+	}
 	#root > div {
 		padding: 6% 9% 6% 10%;
 	}
 }
 @media screen and (min-width: 1500px) {
+	footer {
+		padding: 6% 9% 6% 9%;
+	}
 	#root > div {
-		// padding: 6% 9% 6% 9%;
-		> .img {
-			flex-grow: 0.7;
-		}
+		padding: 6% 9% 6% 9%;
 		> .content {
-			flex-grow: 2;
+			min-width: 600px; // quick fix
+		}
+		> .img {
+			justify-content: start;
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	footer {
+		padding: 6% 7% 6% 7%;
+	}
+	#root > div {
+		padding: 6% 7% 6% 7%;
+		> .content,
+		> .img {
+			flex-grow: 1;
 		}
 	}
 }

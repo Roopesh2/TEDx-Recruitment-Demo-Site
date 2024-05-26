@@ -63,8 +63,9 @@ a {
 	align-items: center;
 }
 
-.bp-910 {
+.bp-1050-row {
 	flex-direction: column !important;
+	gap: 100px;
 }
 @media screen and (max-width: 809px) {
 	.mb-full-width {
@@ -76,7 +77,7 @@ a {
 }
 
 @media screen and (min-width: 1050px) {
-	.bp-910 {
+	.bp-1050-row {
 		flex-direction: row !important;
 	}
 }
