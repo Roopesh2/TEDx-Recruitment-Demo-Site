@@ -1,9 +1,11 @@
-import forwardSVG from "../assets/forward.svg";
-export default function Button({ text, variant }) {
+import "../styles/button.scss";
+import { HiArrowNarrowRight } from "react-icons/hi";
+export default function Button({ text, variant, className }) {
 	return (
-		<button className={"btn-" + variant}>
-			Lorem Ipsum
-			<img src={forwardSVG} alt="" />
+		<button className={`btn-${variant} ${className}`}>
+			{text}
+			<span className="gap"></span>
+			<HiArrowNarrowRight />
 		</button>
 	);
 }

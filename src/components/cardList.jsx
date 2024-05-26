@@ -1,5 +1,5 @@
 import Card from "./card";
-
+import "../styles/card.scss";
 /**
  * @param {Object} param0
  * @param {Array<Object>} param0.list

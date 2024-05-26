@@ -1,0 +1,22 @@
+@import "colors";
+
+header {
+	background-color: $header-bg;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	height: 70px;
+	padding: 10px 30px;
+	border-radius: 50px;
+	margin: 15px;
+	font-size: 1.5rem;
+
+	.img {
+		flex-grow: 1;
+		text-align: left;
+	}
+	img {
+		height: 45px;
+		width: auto !important;
+	}
+}

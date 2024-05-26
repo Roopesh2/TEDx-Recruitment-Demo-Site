@@ -1,0 +1,33 @@
+@import "colors";
+
+.review {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: $review-bg;
+	color: $color-on-tertiary;
+	border-radius: 55px;
+	padding: 25px;
+	text-align: center;
+	.img {
+		margin-top: 7px;
+		padding: 10px;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	p {
+		font-size: 0.95rem;
+	}
+
+	.slider-container {
+		display: flex;
+		padding: 20px;
+		align-items: center;
+		justify-content: space-evenly;
+		.slider {
+			display: flex;
+			gap: 30px;
+		}
+	}
+}

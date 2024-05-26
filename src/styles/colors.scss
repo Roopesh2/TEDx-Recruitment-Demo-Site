@@ -1,0 +1,41 @@
+$body-bg: #feedbc;
+$primary: #f9b800;
+$secondary: #262626;
+$tertiary: #fff;
+
+$color-on-body: $secondary;
+$color-on-primary: $secondary;
+$color-on-secondary: #fff;
+$color-on-tertiary: $secondary;
+$color-on-bg: $secondary;
+
+$header-bg: #fff;
+$review-bg: #fff;
+$infobox-bg: #fff;
+$card-bg: #fff;
+
+.bg-primary {
+	background-color: $primary;
+	color: $color-on-primary;
+}
+
+.bg-secondary {
+	background-color: $secondary;
+	color: $color-on-secondary;
+}
+.bg-tertiary {
+	background-color: $tertiary;
+	color: $color-on-tertiary;
+}
+
+.color-primary {
+	color: $primary;
+}
+
+.color-secondary {
+	color: $secondary;
+}
+
+.color-white {
+	color: #fff;
+}

@@ -1,5 +1,5 @@
 import InfoBox from "./infobox";
-
+import "../styles/infobox.scss";
 /**
  *
  * @param {Object} param0
@@ -9,9 +9,9 @@ import InfoBox from "./infobox";
 export default function InfoBoxGroup({ list }) {
 	return (
 		<div className="infobox-group">
-			{list.map((text) => {
-				<InfoBox text={text} />;
-			})}
+			{list.map((text, _) => (
+				<InfoBox key={_} text={text} />
+			))}
 		</div>
 	);
 }

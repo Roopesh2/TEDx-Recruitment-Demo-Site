@@ -1,4 +1,5 @@
 import ExpandableCard from "./expandableCard";
+import "../styles/card.scss";
 
 /**
  *
