@@ -1,42 +1,4 @@
-import cardIcon1 from "../assets/1.png";
-import cardIcon2 from "../assets/2.png";
-import cardIcon3 from "../assets/3.png";
-import cardIcon4 from "../assets/4.png";
-const CARD_DATA = [
-		{
-			icon: cardIcon1,
-			heading: "1",
-			subheading: "Phasellus Vitae",
-			subsubheading: "Quisque",
-			detail: "PortitorVitae Vel Amet",
-			bgColor: "tertiary",
-		},
-		{
-			icon: cardIcon2,
-			heading: "2",
-			subheading: "Iaculis Magna",
-			subsubheading: "Porttitor",
-			detail: "Neque Scelerisque Mattis.",
-			bgColor: "primary",
-		},
-		{
-			icon: cardIcon3,
-			heading: "3",
-			subheading: "Eleifend Pulvinar",
-			subsubheading: "Vitae",
-			detail: "Consectur Nibh Velit",
-			bgColor: "tertiary",
-		},
-		{
-			icon: cardIcon4,
-			heading: "4",
-			subheading: "Velit Odio Phir",
-			subsubheading: "Ametneq",
-			detail: "Magna Consectur Leo.",
-			bgColor: "primary",
-		},
-	],
-	INFO_BOX_1 = [
+const INFO_BOX_1 = [
 		"Cursus Integer",
 		"Integer Consequat",
 		"Tellus Euismod Pellentesque",
@@ -85,4 +47,4 @@ const CARD_DATA = [
 		},
 	];
 
-export { CARD_DATA, INFO_BOX_1, INFO_BOX_2, FAQ_DATA };
+export { INFO_BOX_1, INFO_BOX_2, FAQ_DATA };

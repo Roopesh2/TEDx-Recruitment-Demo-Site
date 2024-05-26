@@ -8,7 +8,7 @@ import "../styles/infobox.scss";
  */
 export default function InfoBoxGroup({ list }) {
 	return (
-		<div className="infobox-group">
+		<div className="infobox-container">
 			{list.map((text, _) => (
 				<InfoBox key={_} text={text} />
 			))}

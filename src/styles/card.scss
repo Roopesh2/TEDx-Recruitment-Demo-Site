@@ -1,4 +1,5 @@
-@import "colors";
+@import "variables";
+
 .exandable-card {
 	display: flex;
 	flex-direction: column;
@@ -10,26 +11,35 @@
 	padding: 30px 20px 30px 30px;
 	transition: all 0.3s;
 
-	h3 {
-		font-size: 1.51rem;
+	h4 {
+		font-size: calc(var(--fontSize) / 1.46);
 		transition: all 0.1s;
+		line-height: 125%;
+		text-align: left;
+		width: 100%;
 	}
+
 	.top,
 	.bottom {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: space-between;
+		width: 100%;
 	}
+
 	.bottom {
 		transition: all 1s;
+
 		p {
 			font-size: 1.1rem;
 			font-weight: 350;
 			transition: all 1s;
 		}
 	}
+
 	svg {
-		min-width: 25px;
+		min-width: 37px;
 		fill: $primary;
 		cursor: pointer;
 	}
@@ -40,37 +50,107 @@
 }
 
 .card {
-	padding: 45px;
+	padding: 45px 45px 50px 45px;
 	border-radius: 60px;
+	max-width: 400px;
+	min-width: 310px;
+
 	img {
 		max-width: 55px;
 	}
+
 	.container {
-		margin-top: 12px;
+		margin-top: 25px;
+		width: fit-content;
+
 		h1 {
-			font-size: 3.9rem;
+			font-size: calc(var(--fontSize) * 1.85);
 			font-weight: 700;
 		}
+
 		h2 {
 			margin-top: 10px;
-			font-size: 1.4rem;
+			font-size: calc(var(--fontSize) / 1.5);
 		}
+
 		.details {
 			margin-top: 15px;
-			h5 {
+
+			h4 {
 				font-weight: 600;
+				font-size: calc(var(--fontSize) / 1.6);
 			}
+
 			p {
 				margin: 2px 0;
-				font-size: 0.95rem;
+				font-size: calc(var(--fontSize) / 2.2);
 				font-weight: 400;
 			}
 		}
 	}
 }
 
-.card-view {
+.all-cards-container {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 4vw;
+	width: 100%;
+	align-self: center;
+
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4vw;
+	}
+}
+
+@media screen and (min-width: 410px) {
+	.card {
+		width: 350px;
+
+		// make fonts static onwards
+		h1 {
+			font-size: 70px !important;
+		}
+
+		h2 {
+			font-size: 25px !important;
+		}
+
+		h4 {
+			font-size: 20px !important;
+		}
+
+		p {
+			font-size: 17px !important;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.card-container {
+		flex-direction: row !important;
+		justify-content: space-evenly;
+	}
+	.card {
+		.container {
+			margin-top: 0;
+		}
+	}
+	.exandable-card h4 {
+		font-size: 28px !important;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.card-container {
+		align-items: stretch;
+		justify-content: stretch;
+	}
+	.card {
+		min-width: unset;
+		width: 250px;
+		padding: 30px;
+	}
 }

@@ -1,4 +1,5 @@
-@import "colors";
+@import "variables";
+@import "index";
 button {
 	padding: 20px 35px;
 	border: none;
@@ -8,14 +9,10 @@ button {
 	width: max-content;
 	justify-content: space-between;
 	font-weight: 700;
-	font-size: 1.03rem;
+	font-size: calc(var(--fontSize) / 2.2);
 	cursor: pointer;
 	.gap {
 		width: 15px;
-	}
-
-	svg {
-		scale: 1.5;
 	}
 }
 

@@ -1,0 +1,132 @@
+$body-bg: #feedbc;
+$primary: #f9b800;
+$secondary: #262626;
+$tertiary: #fff;
+
+$color-on-body: $secondary;
+$color-on-primary: $secondary;
+$color-on-secondary: #fff;
+$color-on-tertiary: $secondary;
+$color-on-bg: $secondary;
+
+$header-bg: #fff;
+$review-bg: #fff;
+$infobox-bg: #fff;
+$card-bg: #fff;
+
+:root {
+	--fontSize: 9vw;
+}
+
+$padding: 8vw;
+
+.bg-primary {
+	background-color: $primary;
+	color: $color-on-primary;
+}
+
+.bg-secondary {
+	background-color: $secondary;
+	color: $color-on-secondary;
+}
+
+.bg-tertiary {
+	background-color: $tertiary;
+	color: $color-on-tertiary;
+}
+
+.bg-duotone {
+	background: linear-gradient(
+		to bottom,
+		$secondary 0%,
+		$secondary 50%,
+		$primary 50%,
+		$primary 100%
+	);
+}
+
+.color-primary {
+	color: $primary;
+}
+
+.color-secondary {
+	color: $secondary;
+}
+
+.color-white {
+	color: #fff;
+}
+
+@media screen and (min-width: 450px) {
+	:root {
+		--fontSize: 8vw;
+	}
+}
+@media screen and (min-width: 550px) {
+	:root {
+		--fontSize: 7.5vw;
+	}
+}
+@media screen and (min-width: 650px) {
+	:root {
+		--fontSize: 7vw;
+	}
+}
+@media screen and (min-width: 750px) {
+	:root {
+		--fontSize: 6.5vw;
+	}
+}
+@media screen and (min-width: 810px) {
+	:root {
+		--fontSize: 5vw;
+	}
+}
+@media screen and (min-width: 910px) {
+	:root {
+		--fontSize: 4.5vw;
+	}
+}
+@media screen and (min-width: 1000px) {
+	:root {
+		--fontSize: 4vw;
+	}
+	// make fonts static onwards
+	body {
+		font-size: 18px !important;
+	}
+
+	button {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 43px !important;
+	}
+
+	h2 {
+		font-size: 40px !important;
+	}
+
+	h3 {
+		font-size: 35px !important;
+	}
+
+	h4 {
+		font-size: 30px !important;
+	}
+
+	.review p {
+		font-size: 20px !important;
+	}
+	.description-head {
+		font-size: 23px !important;
+	}
+
+	.description {
+		font-size: 20px !important;
+	}
+
+	.features .content {
+		padding: 100px 20px 0 0;
+	}
+}

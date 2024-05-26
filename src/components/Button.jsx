@@ -5,7 +5,7 @@ export default function Button({ text, variant, className }) {
 		<button className={`btn-${variant} ${className}`}>
 			{text}
 			<span className="gap"></span>
-			<HiArrowNarrowRight />
+			<HiArrowNarrowRight size="25" />
 		</button>
 	);
 }

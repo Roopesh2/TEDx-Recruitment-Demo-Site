@@ -16,11 +16,11 @@ export default function ExpandableCard({ heading, body }) {
 			}}
 		>
 			<div className="top">
-				<h3 className={expanded ? "wt-700" : "wt-600"}>{heading}</h3>
+				<h4 className={expanded ? "wt-700" : "wt-600"}>{heading}</h4>
 				{expanded ? (
-					<BiMinus size="25" onClick={toggleExpansion} />
+					<BiMinus size="40" onClick={toggleExpansion} />
 				) : (
-					<BiPlus size="25" onClick={toggleExpansion} />
+					<BiPlus size="40" onClick={toggleExpansion} />
 				)}
 			</div>
 			<div className="bottom">

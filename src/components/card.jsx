@@ -17,7 +17,7 @@ export default function Card({
 				</h1>
 				<h2>{subheading}</h2>
 				<div className="details">
-					<h5>{subsubheading}</h5>
+					<h4>{subsubheading}</h4>
 					<p>{detail}</p>
 				</div>
 			</div>
